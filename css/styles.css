@@ -40,7 +40,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin-top: 0;
 }
 
@@ -195,6 +196,7 @@ nav {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 .features-text {
   color: var(--secondary-txt-cl);
@@ -231,9 +233,10 @@ nav {
 .section-team {
   background-color: var(--secondary-bg-cl);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.team-container {
+.team-list {
   display: flex;
   gap: 30px;
 }
@@ -244,6 +247,7 @@ nav {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 .team-list {
@@ -262,6 +266,8 @@ nav {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .team-profession {
   color: var(--secondary-txt-cl);
@@ -270,6 +276,7 @@ nav {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
 /* .list-item */
 
@@ -277,7 +284,14 @@ nav {
 
 .footer {
   background-color: var(--hero-bg-cl);
+  display: flex;
 }
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   color: var(--white-txt-cl);
   font-family: var(--secondary-font);
@@ -287,6 +301,13 @@ nav {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
+.footer-list {
+  padding-top: 20px;
+}
+
+/* .footer-item  */
+
 .footer-adress {
   font-style: normal;
 }
@@ -308,16 +329,22 @@ nav {
 
 /*Portfolio*/
 
-/* .projects  */
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-/* .filters-list  */
+.filters-list {
+  display: flex;
+  gap: 8px;
+}
 
 /* .fiters-item  */
 
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 34px;
 }
 
 .filters-btn {
@@ -339,22 +366,28 @@ nav {
 }
 .project-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
-.project-cards {
+/* .project-cards {
   padding: 20px 24px;
+} */
+
+.project-item {
+  flex-basis: calc ((100% - 30px * 2) / 3);
 }
 
-/* .project-item */
-
-/* .project-img */
+.project-img {
+  padding-bottom: 20px;
+}
 
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 .project-filters {
   color: var(--secondary-txt-cl);
