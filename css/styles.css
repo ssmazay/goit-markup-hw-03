@@ -84,14 +84,15 @@ nav {
   /* outline: 2px solid red; */
 }
 
-/* Header */
-
-.header-container {
-  display: flex;
+.header {
   border: 1px solid #ececec;
   border-top: 0;
   border-left: 0;
   border-right: 0;
+}
+
+.header-container {
+  display: flex;
 }
 
 .logo {
@@ -147,7 +148,7 @@ nav {
   color: var(--white-txt-cl);
   margin: auto;
   padding-top: 200px;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   /* width: 1600px;
   height: 600px;
   left: 0px;
@@ -187,6 +188,9 @@ nav {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: 0;
+  width: 216px;
+  height: 50px;
+  padding-left: 30px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -194,8 +198,8 @@ nav {
 }
 
 .section-features {
-  padding-top: 94;
-  padding-bottom: 94;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -224,8 +228,7 @@ nav {
 }
 
 .section-work {
-  padding-top: 94;
-  padding-bottom: 94;
+  padding-bottom: 94px;
 }
 
 .work-title {
@@ -234,7 +237,7 @@ nav {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 50px;
+  margin-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -264,7 +267,7 @@ nav {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -322,10 +325,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.footer-list {
-  margin-top: 20px;
-}
-
 .item-str {
   margin-bottom: 9px;
 }
@@ -336,6 +335,7 @@ nav {
 
 .footer-adress {
   font-style: normal;
+  margin-top: 20px;
 }
 .footer-link {
   color: var(--white-txt-cl);
@@ -356,8 +356,6 @@ nav {
 /*Portfolio*/
 
 .projects {
-  display: flex;
-  justify-content: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -366,7 +364,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 /* .fiters-item  */
@@ -382,6 +380,9 @@ nav {
   letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
+  width: 125px;
+  height: 38px;
+  padding: 6px 22px;
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -403,7 +404,6 @@ nav {
 }
 
 .cards-name {
-  display: block;
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px;
@@ -417,7 +417,7 @@ nav {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .project-filters {
   color: var(--secondary-txt-cl);
